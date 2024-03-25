@@ -1,8 +1,6 @@
 <template>
-  <nav
-    class="flex justify-between items-center h-24 py-2 px-10 bg-gray-800 text-white"
-  >
-    <div class="flex items-center w-48 h-16">
+  <nav class="flex justify-between items-center h-24 py-2 px-10">
+    <NuxtLink to="/" class="flex items-center w-36 h-16">
       <NuxtImg
         src="/logo.png"
         alt="Vue School Logo"
@@ -14,7 +12,7 @@
         <div class="-mb-1.5">Vue</div>
         <div>School.io</div>
       </div>
-    </div>
+    </NuxtLink>
 
     <div class="flex space-x-6">
       <NuxtLink
@@ -94,13 +92,13 @@
       </NuxtLink>
       <NuxtLink
         to="/sign-up"
-        class="h-14 w-36 rounded-[10px] bg-gradient-to-r from-green-400 to-blue-500 p-0.5"
+        class="flex h-14 w-36 max-w-sm rounded-lg bg-gradient-to-tr from-green-400 to-blue-500 p-0.5 shadow-lg"
       >
-        <div
-          class="flex h-full rounded-[10px] items-center justify-center bg-gray-800"
+        <button
+          class="flex-1 font-medium text-l bg-gray-800 px-6 py-3 rounded-lg text-green-400"
         >
-          <NuxtLink to="" class="text-green-300">Sign up</NuxtLink>
-        </div>
+          Sign up
+        </button>
       </NuxtLink>
     </div>
   </nav>
