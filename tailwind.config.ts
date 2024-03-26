@@ -7,13 +7,14 @@ export default {
     },
     extend: {
       colors: {
-        transparent: "transparent",
-        current: "currentColor",
         gray: {
           800: "#212435",
         },
         green: {
           400: "#0BD88F",
+        },
+        cyan: {
+          400: "#00F0FF",
         },
       },
     },
