@@ -46,7 +46,7 @@
     >
       <div class="container mx-auto pt-20 px-6">
         <div
-          class="bg-gray-800 bg-opacity-90 p-14 rounded-2xl shadow-lg mb-8 flex"
+          class="bg-gray-800 border-2 border-gray-600 bg-opacity-90 p-14 rounded-2xl shadow-lg mb-8 flex"
         >
           <div class="w-1/3 flex items-center justify-center">
             <div class="w-40 h-44 flex items-center justify-center">
@@ -168,16 +168,20 @@
     </section>
 
     <section
-      class="h-auto w-full mt-24 pt-5 bg-no-repeat bg-[url('/svg/Background3.svg'),_url('/svg/Background4.svg')] bg-[position:50%_-20%,_bottom_-180px_center] bg-[size:cover,_100%]"
+      class="h-auto w-full bg-no-repeat bg-[url('/svg/Background3.svg'),_url('/svg/Background4.svg')] bg-[position:50%_20px,_bottom_0px_center] bg-[size:cover,_100%]"
     >
-      <div class="flex justify-center text-center">
-        <div class="max-w-auto">
+      <div class="flex justify-center text-center pb-10">
+        <div class="max-w-xl">
           <p class="text-5xl font-extrabold text-white leading-snug">
             Discounted
             <span
-              class="bg-gradient-to-r from-cyan-400 from-50% via-green-400 via-70% to-cyan-400 to-80% text-transparent bg-clip-text"
+              class="bg-gradient-to-r from-cyan-400 via-60% to-cyan-400 to-80% text-transparent bg-clip-text"
             >
-              Corporate <br />
+              Corporate
+            </span>
+            <span
+              class="bg-gradient-to-r from-green-400 to-cyan-400  text-transparent bg-clip-text"
+            >
               Training
             </span>
             Bundles
@@ -185,9 +189,9 @@
         </div>
       </div>
 
-      <div class="container mx-auto flex justify-center mt-12">
+      <div class="container mx-auto flex justify-center mt-20 pb-36">
         <div
-          class="h-full max-w-md w-96 rounded-2xl opacity-90 overflow-hidden shadow-lg bg-gray-800 text-white mx-4"
+          class="h-full max-w-md w-96 rounded-2xl opacity-90 overflow-hidden shadow-lg border-2 border-gray-600 bg-gray-800 text-white mx-4"
         >
           <div class="px-6 pt-8 pb-5">
             <div class="flex text-2xl font-bold mb-7">
@@ -351,7 +355,7 @@
         </div>
 
         <div
-          class="h-full max-w-md w-96 rounded-2xl opacity-90 overflow-hidden shadow-lg bg-gray-800 text-white mx-4"
+          class="h-full max-w-md w-96 rounded-2xl opacity-90 overflow-hidden shadow-lg border-2 border-gray-600 bg-gray-800 text-white mx-4"
         >
           <div class="px-6 pt-8 pb-5">
             <div class="flex text-2xl font-bold mb-7">
@@ -559,7 +563,7 @@
         </div>
 
         <div
-          class="h-full max-w-md w-96 rounded-2xl opacity-90 overflow-hidden shadow-lg bg-gray-800 text-white mx-4"
+          class="h-full max-w-md w-96 rounded-2xl opacity-90 overflow-hidden shadow-lg border-2 border-gray-600 bg-gray-800 text-white mx-4"
         >
           <div class="px-6 pt-8 pb-5">
             <div class="flex text-2xl font-bold mb-7">
@@ -745,6 +749,225 @@
         </div>
       </div>
     </section>
+
+    <section class="h-auto">
+      <div class="container flex justify-between mx-auto mb-16">
+        <p class="text-5xl pt-14 font-bold text-white">Available Workshops</p>
+        <p class="pt-14 font-bold text-white">
+          <NuxtLink
+            to="/"
+            class="flex h-14 w-full max-w-sm rounded-lg bg-green-400 p-0.5 shadow-lg"
+          >
+            <button class="px-6 py-3 rounded-lg text-black">
+              See all the workshops
+            </button>
+          </NuxtLink>
+        </p>
+      </div>
+      <div
+        ref="scrollRef"
+        class="parent touch-none flex snap-x snap-mandatory flex-nowrap overflow-x-auto hide-scrollbar"
+      >
+        <!-- Card 1 -->
+        <div
+          class="pointer-events-none select-none flex-none max-w-2xl rounded-xl shadow-lg overflow-hidden ml-44"
+        >
+          <div
+            class="bg-opacity-10 bg-gradient-to-r from-violet-900/80 to-pink-700/75 px-8 py-4"
+          >
+            <div class="header-border"></div>
+            <p class="flex items-center text-white">
+              <NuxtImg
+                src="svg/icons/CalendarIcon.svg"
+                alt="Calendar Icon"
+                height="18"
+                width="18"
+                class="mr-2"
+              />
+              December 14th - 11:00 AM (GMT-3)
+            </p>
+          </div>
+          <div class="card-content bg-opacity-30 bg-gray-700 p-8">
+            <div class="flex tags mb-4">
+              <span
+                class="flex items-center font-light text-gray-400 py-1 rounded-full"
+              >
+                <NuxtImg
+                  src="svg/icons/PlayIcon.svg"
+                  alt="Play Icon"
+                  height="18"
+                  width="18"
+                  class="mr-2 opacity-50"
+                />
+                Live Training
+              </span>
+              <span
+                class="flex items-center font-light text-gray-400 px-3 py-1 rounded-full"
+              >
+                <NuxtImg
+                  src="svg/icons/TimeIcon.svg"
+                  alt="Time Icon"
+                  height="18"
+                  width="18"
+                  class="mr-2 opacity-50"
+                />
+                15 hours
+              </span>
+            </div>
+            <h2 class="title text-2xl text-white font-bold mb-2">
+              Vue.js Fundamentals
+            </h2>
+            <p class="font-light text-gray-400 mb-4">
+              A progressive framework for building user interfaces. Unlike other
+              monolithic frameworks, Vue is designed from the ground up to be
+              incrementally...
+            </p>
+            <div class="font-light text-gray-400 flex items-center">
+              <NuxtImg
+                src="img/Avatar.png"
+                alt="User Avatar"
+                height="24"
+                width="24"
+                class="mr-2"
+              />
+              Steve Popoola
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pointer-events-none select-none flex-none max-w-2xl rounded-xl shadow-lg overflow-hidden ml-8"
+        >
+          <div
+            class="bg-opacity-10 bg-gradient-to-r from-violet-900/80 to-pink-700/75 px-8 py-4"
+          >
+            <div class="header-border"></div>
+            <p class="flex items-center text-white">
+              <NuxtImg
+                src="svg/icons/CalendarIcon.svg"
+                alt="Calendar Icon"
+                height="18"
+                width="18"
+                class="mr-2"
+              />
+              December 14th - 11:00 AM (GMT-3)
+            </p>
+          </div>
+          <div class="card-content bg-opacity-30 bg-gray-700 p-8">
+            <div class="flex tags mb-4">
+              <span
+                class="flex items-center font-light text-gray-400 py-1 rounded-full"
+              >
+                <NuxtImg
+                  src="svg/icons/PlayIcon.svg"
+                  alt="Play Icon"
+                  height="18"
+                  width="18"
+                  class="mr-2 opacity-50"
+                />
+                Live Training
+              </span>
+              <span
+                class="flex items-center font-light text-gray-400 px-3 py-1 rounded-full"
+              >
+                <NuxtImg
+                  src="svg/icons/TimeIcon.svg"
+                  alt="Time Icon"
+                  height="18"
+                  width="18"
+                  class="mr-2 opacity-50"
+                />
+                15 hours
+              </span>
+            </div>
+            <h2 class="title text-2xl text-white font-bold mb-2">
+              Vue.js Fundamentals
+            </h2>
+            <p class="font-light text-gray-400 mb-4">
+              A progressive framework for building user interfaces. Unlike other
+              monolithic frameworks, Vue is designed from the ground up to be
+              incrementally...
+            </p>
+            <div class="font-light text-gray-400 flex items-center">
+              <NuxtImg
+                src="img/Avatar.png"
+                alt="User Avatar"
+                height="24"
+                width="24"
+                class="mr-2"
+              />
+              Steve Popoola
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pointer-events-none select-none flex-none max-w-2xl rounded-xl shadow-lg overflow-hidden ml-8 mr-10"
+        >
+          <div
+            class="bg-opacity-10 bg-gradient-to-r from-violet-900/80 to-pink-700/75 px-8 py-4"
+          >
+            <div class="header-border"></div>
+            <p class="flex items-center text-white">
+              <NuxtImg
+                src="svg/icons/CalendarIcon.svg"
+                alt="Calendar Icon"
+                height="18"
+                width="18"
+                class="mr-2"
+              />
+              December 14th - 11:00 AM (GMT-3)
+            </p>
+          </div>
+          <div class="card-content bg-opacity-30 bg-gray-700 p-8">
+            <div class="flex tags mb-4">
+              <span
+                class="flex items-center font-light text-gray-400 py-1 rounded-full"
+              >
+                <NuxtImg
+                  src="svg/icons/PlayIcon.svg"
+                  alt="Play Icon"
+                  height="18"
+                  width="18"
+                  class="mr-2 opacity-50"
+                />
+                Live Training
+              </span>
+              <span
+                class="flex items-center font-light text-gray-400 px-3 py-1 rounded-full"
+              >
+                <NuxtImg
+                  src="svg/icons/TimeIcon.svg"
+                  alt="Time Icon"
+                  height="18"
+                  width="18"
+                  class="mr-2 opacity-50"
+                />
+                15 hours
+              </span>
+            </div>
+            <h2 class="title text-2xl text-white font-bold mb-2">
+              Vue.js Fundamentals
+            </h2>
+            <p class="font-light text-gray-400 mb-4">
+              A progressive framework for building user interfaces. Unlike other
+              monolithic frameworks, Vue is designed from the ground up to be
+              incrementally...
+            </p>
+            <div class="font-light text-gray-400 flex items-center">
+              <NuxtImg
+                src="img/Avatar.png"
+                alt="User Avatar"
+                height="24"
+                width="24"
+                class="mr-2"
+              />
+              Steve Popoola
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -752,10 +975,39 @@
 const basicSeat = ref(12);
 const professionalSeat = ref(12);
 const secondBasicSeat = ref(12);
+const scrollRef = useSideScroll();
+
+const pointerScroll = (elem: any) => {
+  let isDrag = false;
+
+  const dragStart = () => (isDrag = true);
+  const dragEnd = () => (isDrag = false);
+  const drag = (ev: any) => isDrag && (elem.scrollLeft -= ev.movementX);
+
+  elem.addEventListener("pointerdown", dragStart);
+  addEventListener("pointerup", dragEnd);
+  addEventListener("pointermove", drag);
+};
+onMounted(() => {
+  document.querySelectorAll(".parent").forEach(pointerScroll);
+});
 </script>
 
 <style scoped>
 .bg-vectors {
   background-image: url("/svg/Background1.svg"), url("/svg/Background2.svg");
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.testsvg {
+  fill: red;
 }
 </style>

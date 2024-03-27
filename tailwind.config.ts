@@ -18,6 +18,12 @@ export default {
         cyan: {
           400: "#00F0FF",
         },
+        purple: {
+          600: "#4F08E680",
+        },
+        orange: {
+          600: "#FF497580",
+        },
       },
     },
   },
