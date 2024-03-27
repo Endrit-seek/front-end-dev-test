@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Rubik: true,
+      Inter: true,
     },
     download: true,
   },

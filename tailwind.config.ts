@@ -4,6 +4,8 @@ export default {
   theme: {
     borderRadius: {
       lg: ".6rem",
+      xl: "1rem",
+      "2xl": "30px",
     },
     extend: {
       colors: {
