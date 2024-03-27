@@ -3,7 +3,7 @@
     <section class="md:flex items-center justify-center">
       <div class="container mx-auto">
         <div class="md:flex items-center justify-around">
-          <div class="md:w-1/3">
+          <div class="md:w-1/3 md:p-6 p-7 sm:w-1/1 lg:text-left md:text-center">
             <h2 class="text-6xl font-bold text-white pb-9">
               Complete
               <span class="text-green-400">Vue.js training</span> solution
@@ -29,7 +29,7 @@
             </NuxtLink>
           </div>
 
-          <div class="flex justify-end mt-5">
+          <div class="flex justify-end mt-5 p-7">
             <NuxtImg
               src="/svg/Illustration1.svg"
               alt="Illustration"
@@ -42,7 +42,7 @@
     </section>
 
     <section
-      class="w-full -mt-[80px] bg-background-pattern bg-cover bg-vectors py-24"
+      class="w-full -mt-[80px] bg-background-pattern bg-cover bg-[url('/svg/Background1.svg'),_url('/svg/Background2.svg')] py-24"
     >
       <div class="container mx-auto pt-20 px-6">
         <div
@@ -74,7 +74,7 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-between pt-16 p-10">
+        <div class="flex flex-wrap items-center justify-between pt-16 p-10">
           <NuxtImg
             v-for="key in 6"
             :key="key"
@@ -180,7 +180,7 @@
               Corporate
             </span>
             <span
-              class="bg-gradient-to-r from-green-400 to-cyan-400  text-transparent bg-clip-text"
+              class="bg-gradient-to-r from-green-400 to-cyan-400 text-transparent bg-clip-text"
             >
               Training
             </span>
@@ -881,12 +881,12 @@
               </span>
             </div>
             <h2 class="title text-2xl text-white font-bold mb-2">
-              Vue.js Fundamentals
+              Vue 3 and Composition API
             </h2>
             <p class="font-light text-gray-400 mb-4">
-              A progressive framework for building user interfaces. Unlike other
-              monolithic frameworks, Vue is designed from the ground up to be
-              incrementally...
+              Take a deep dive into the new and exciting features of Vue 3.
+              Learn about Portals, Suspense, Composition API, Fragments, and
+              much much more...
             </p>
             <div class="font-light text-gray-400 flex items-center">
               <NuxtImg
@@ -947,12 +947,12 @@
               </span>
             </div>
             <h2 class="title text-2xl text-white font-bold mb-2">
-              Vue.js Fundamentals
+              Vue 3 and Composition API
             </h2>
             <p class="font-light text-gray-400 mb-4">
-              A progressive framework for building user interfaces. Unlike other
-              monolithic frameworks, Vue is designed from the ground up to be
-              incrementally...
+              Take a deep dive into the new and exciting features of Vue 3.
+              Learn about Portals, Suspense, Composition API, Fragments, and
+              much much more...
             </p>
             <div class="font-light text-gray-400 flex items-center">
               <NuxtImg
@@ -968,6 +968,170 @@
         </div>
       </div>
     </section>
+
+    <footer class="h-auto container mt-52 mb-24 mx-auto">
+      <div class="grid gap-4 grid-cols-5 grid-rows-1">
+        <div class="col-span-2 max-w-lg">
+          <div class="flex items-center h-24">
+            <NuxtImg
+              src="svg/logo.svg"
+              alt="Vue School Logo"
+              width="50"
+              height="50"
+              class="mr-4"
+            />
+            <div class="text-2xl font-medium">
+              <div class="-mb-1.5">Vue</div>
+              <div>School.io</div>
+            </div>
+          </div>
+          <div class="mt-6">
+            Thanks to fine people like you, Vue School can proudly sponsor Evan
+            and the future of Vue.js by being a Platinum Patreon
+          </div>
+          <div class="mt-10">
+            <span class="text-gray-400 text-2xl"
+              >FOLLOW US IN SOCIAL MEDIA</span
+            >
+            <ul class="flex justify-start mt-8">
+              <li class="mr-8">
+                <NuxtLink to="">
+                  <NuxtImg
+                    src="/svg/logo/FacebookLogo.svg"
+                    alt="Vue School Logo"
+                    width="50"
+                    height="50"
+                  />
+                </NuxtLink>
+              </li>
+              <li class="mr-8">
+                <NuxtLink to="">
+                  <NuxtImg
+                    src="/svg/logo/TwitterLogo.svg"
+                    alt="Vue School Logo"
+                    width="50"
+                    height="50"
+                  />
+                </NuxtLink>
+              </li>
+              <li class="mr-8">
+                <NuxtLink to="">
+                  <NuxtImg
+                    src="/svg/logo/GitHubLogo.svg"
+                    alt="Vue School Logo"
+                    width="50"
+                    height="50"
+                  />
+                </NuxtLink>
+              </li>
+              <li class="mr-8">
+                <NuxtLink to="">
+                  <NuxtImg
+                    src="/svg/logo/LinkedInLogo.svg"
+                    alt="Vue School Logo"
+                    width="50"
+                    height="50"
+                  />
+                </NuxtLink>
+              </li>
+              <li class="mr-8">
+                <NuxtLink to="">
+                  <NuxtImg
+                    src="/svg/logo/YouTubeLogo.svg"
+                    alt="Vue School Logo"
+                    width="50"
+                    height="50"
+                  />
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div></div>
+
+        <div class="col-span-2">
+          <!-- Title and links section -->
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Products -->
+            <div class="flex flex-col justify-end">
+              <h4 class="text-gray-400 text-lg font-semibold uppercase">
+                Products
+              </h4>
+              <ul class="mt-2">
+                <!-- Your product links here -->
+                <li class="mb-2"><a href="#">Courses</a></li>
+                <li class="mb-2"><a href="#">Workshops</a></li>
+                <li class="mb-2"><a href="#">Vue Masterclass</a></li>
+                <li class="mb-2"><a href="#">Mastering Nuxt</a></li>
+              </ul>
+            </div>
+
+            <!-- Events -->
+            <div>
+              <h4 class="text-gray-400 text-lg font-semibold uppercase">
+                Events
+              </h4>
+              <ul class="mt-2">
+                <!-- Your event links here -->
+                <li class="mb-2"><a href="#">Vue.js Nation</a></li>
+                <li class="mb-2"><a href="#">Nuxt Nation</a></li>
+                <li class="mb-2"><a href="#">Vue.js Forge</a></li>
+              </ul>
+            </div>
+
+            <!-- Pricing -->
+            <div class="row-span-3">
+              <h4 class="text-gray-400 text-lg font-semibold mt-8 uppercase">
+                Pricing
+              </h4>
+              <ul class="mb-8">
+                <!-- Your pricing links here -->
+                <li><a href="#">Plans</a></li>
+              </ul>
+              <!-- Connect with Us -->
+              <div>
+                <h4 class="text-gray-400 text-lg font-semibold uppercase">
+                  Connect with Us
+                </h4>
+                <ul class="mt-2">
+                  <!-- Your social media links here -->
+                  <li class="mb-2"><a href="#">About Us</a></li>
+                  <li class="mb-2"><a href="#">Careers</a></li>
+                  <li class="mb-2"><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Corporate -->
+            <div>
+              <h4 class="text-gray-400 text-lg font-semibold uppercase">
+                Corporate
+              </h4>
+              <ul class="mt-2">
+                <!-- Your corporate links here -->
+                <li class="mb-2"><a href="#">Corporate Training</a></li>
+                <li class="mb-2"><a href="#">Developer Recruitment</a></li>
+                <li class="mb-2"><a href="#">Course Development</a></li>
+                <li class="mb-2"><a href="#">On-site Workshops</a></li>
+                <li class="mb-2"><a href="#">Consulting</a></li>
+                <li class="mb-2"><a href="#">Affiliate Programs</a></li>
+              </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+              <h4 class="text-gray-400 text-lg font-semibold uppercase">
+                Resources
+              </h4>
+              <ul class="mt-2">
+                <!-- Your resource links here -->
+                <li><a href="#">Articles</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -994,20 +1158,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.bg-vectors {
-  background-image: url("/svg/Background1.svg"), url("/svg/Background2.svg");
-}
-
-.flex {
-  display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-}
-
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.testsvg {
-  fill: red;
 }
 </style>
