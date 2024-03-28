@@ -186,9 +186,6 @@ const toggleSidebar = () => {
 };
 </script>
 <style scoped>
-.sidebar_links {
-}
-
 .sidebar_links a {
 	margin: 15px 30px 0 0;
 	border-bottom: 1px solid rgba(11, 216, 143, 0.4);
