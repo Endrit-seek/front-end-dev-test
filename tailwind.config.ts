@@ -2,6 +2,13 @@
 export default {
   content: [],
   theme: {
+    screens: {
+      sm: { min: "0px", max: "766px" },
+      md: { min: "767px", max: "1300px" },
+      lg: { min: "1301px", max: "1920px" },
+      xl: { min: "1921px", max: "2047px" },
+      "2xl": { min: "2048px" },
+    },
     borderRadius: {
       lg: ".6rem",
       xl: "1rem",
